@@ -4,18 +4,18 @@
  ;; Available options:
  ;; - Markdown (default)
  ;; - Org
- ;; :preferred-format "Markdown"
+ :preferred-format "Markdown"
 
  ;; Set the preferred workflow style.
  ;; Available options:
  ;; - :now for NOW/LATER style (default)
  ;; - :todo for TODO/DOING style
- :preferred-workflow :now
+ :preferred-workflow :todo
 
  ;; Exclude directories/files.
  ;; Example usage:
  ;; :hidden ["/archived" "/test.md" "../assets/archived"]
- :hidden []
+ :hidden ["LICENSE" "README.md"]
 
  ;; Define the default journal page template.
  ;; Enter the template name between the quotes.
@@ -420,4 +420,5 @@
  ;;      ;use Percent-encoding for other invalid characters
  :file/name-format :triple-lowbar
  :feature/enable-journals? false
- :default-home {:page "Index"}}
+ :default-home {:page "Base"}
+ :feature/enable-timetracking? false}
