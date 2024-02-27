@@ -4,7 +4,6 @@
 html,
 body,
 .normal-block {
-  font-family: "IBM Plex Sans";
   font-size: 16px;
   line-height: 1.75;
 }
@@ -32,56 +31,73 @@ mark {
 }
 
 .shadow-md {
-  border-bottom: 5px solid var(--fs-secondary-background-color);
+  border: 5px solid var(--fs-secondary-background-color);
   margin-bottom: 0.5rem;
 }
 
-.white-theme,
+.sidebar-item-list {
+  padding: 0 1rem;
+}
+
 .light-theme,
 html[data-theme=light] {
-  --ls-primary-background-color: var(--fs-primary-background-color);
-  --ls-page-mark-bg-color: var(--fs-mark-color);
-  --ls-left-sidebar-text-color: var(--fs-primary-text-color);
-  --ls-block-ref-link-text-color: var(--fs-block-ref-color);
-  --ls-link-ref-text-color: var(--fs-block-ref-color);
-  --ls-right-sidebar-content-background: var(--ls-primary-background-color);
-  --ls-right-ridebar-color: var(--ls-primary-background-color);
+  /* Backgrounds */
+  --ls-top-bar-background: var(--fs-primary-background-color);
+  --ls-main-content-background: var(--fs-primary-background-color);
+  --ls-right-ridebar-color: var(--fs-primary-background-color);
+  --ls-right-sidebar-content-background: var(--fs-primary-background-color);
   --color-level-2: var(--fs-secondary-background-color);
+  --ls-primary-background-color: var(--fs-primary-background-color);
+  --ls-secondary-background-color: var(--fs-secondary-background-color);
+  --rx-slate-01: var(--fs-primary-background-color);
+  --rx-slate-02: var(--fs-secondary-background-color);
+  --ls-left-sidebar-background: var(--fs-secondary-background-color);
+  /* Texts */
+  --ls-primary-text-color: var(--fs-primary-text-color);
+  --ls-page-mark-bg-color: var(--fs-mark-color);
+  /* Links */
+  --ls-block-ref-link-text-color: var(--fs-link-color);
+  --ls-link-text-hover-color: var(--fs-link-hover-color);
+  --ls-link-ref-text-color: var(--fs-link-color);
+  --ls-link-ref-text-hover-color: var(--fs-link-hover-color);
+  --ls-anchor-link-text-color: var(--fs-link-color);
+  --ls-anchor-link-text-color-hover: var(--fs-link-hover-color);
+  /* Code */
+  --ls-page-inline-code-bg-color: var(--fs-secondary-background-color);
 }
-
-.left-sidebar-inner {
+.light-theme .left-sidebar-inner,
+html[data-theme=light] .left-sidebar-inner {
   background-color: var(--fs-primary-background-color);
 }
-
-.resizer,
-.left-sidebar-resizer {
+.light-theme .resizer,
+.light-theme .left-sidebar-resizer,
+html[data-theme=light] .resizer,
+html[data-theme=light] .left-sidebar-resizer {
   background-color: var(--fs-secondary-background-color);
-  width: 5px !important;
+  width: 6px !important;
 }
-
-.left-sidebar-inner .nav-content-item .header {
-  background-color: var(--fs-secondary-background-color);
-}
-
-.block-ref {
+.light-theme .block-ref,
+html[data-theme=light] .block-ref {
   border-bottom: 2.5px solid var(--ls-block-ref-link-text-color);
-  color: var(--fs-block-ref-color);
+  color: var(--fs-link-color);
 }
-
-.external-link {
+.light-theme .external-link,
+html[data-theme=light] .external-link {
   border-bottom: 2.5px solid var(--fs-external-link-color);
   color: var(--fs-external-link-color);
 }
 
 :root {
   --display-create-button: none;
-}
-
-:root {
-  --fs-primary-text-color: #262a34;
+  --ls-font-family: "IBM Plex Sans";
+  --ls-page-title-size: 36px;
+  --ls-page-text-size: 1em;
+  --ls-scrollbar-width: 6px;
+  --fs-primary-text-color: #433f38;
   --fs-primary-background-color: #f9f7f3;
   --fs-secondary-background-color: #f1ede4;
   --fs-mark-color: #a5b4df;
-  --fs-external-link-color: #5cab7d;
-  --fs-block-ref-color: #4a69bd;
+  --fs-external-link-color: #0e9594;
+  --fs-link-color: #4a69bd;
+  --fs-link-hover-color: #1c284a;
 }
