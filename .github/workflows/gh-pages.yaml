@@ -15,6 +15,7 @@ jobs:
         uses: logseq/publish-spa@main
         with:
           output-directory: www
+          theme-mode: light
 
       - name: Add .nojekyll file
         run: touch www/.nojekyll
