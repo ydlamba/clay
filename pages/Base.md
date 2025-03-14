@@ -1,2 +1,3 @@
-- >**Clay** represents how passing interests either take permanent shape or return to base. Some solidify; others are broken down to begin anew.
+- >***Clay*** represents how passing interests either take permanent shape or return to base.
+  Some crystallize; others are broken down to begin anew.
 - [[Now]]
