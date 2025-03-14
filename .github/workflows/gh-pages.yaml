@@ -16,6 +16,7 @@ jobs:
         with:
           output-directory: www
           theme-mode: light
+          version: nightly
 
       - name: Add .nojekyll file
         run: touch www/.nojekyll
